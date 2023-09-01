@@ -1,5 +1,5 @@
 # nvim
 My Neovim config
 
-##Installation
+## Installation
 Clone repo into ~/.config/ (on Windows: ~\AppData\Local\)
