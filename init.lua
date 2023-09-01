@@ -1,0 +1,5 @@
+require "chroma.options"
+require "chroma.keymaps"
+require "chroma.plugins"
+require "chroma.colorscheme"
+require "chroma.lsp"
