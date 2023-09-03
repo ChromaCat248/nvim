@@ -33,6 +33,15 @@ require("lazy").setup({
   "neovim/nvim-lspconfig",
   "simrat39/rust-tools.nvim",
 
+  -- gitsigns
+  "lewis6991/gitsigns.nvim",
+
+  -- treesitter
+  "nvim-treesitter/nvim-treesitter",
+
   -- peartree
-  "tmsvg/pear-tree"
+  "tmsvg/pear-tree",
+
+  -- file tree
+  "nvim-tree/nvim-tree.lua"
 })

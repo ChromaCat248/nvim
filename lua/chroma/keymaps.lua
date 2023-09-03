@@ -10,7 +10,9 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- leader commands
-keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+keymap("n", "<leader>t", ":tabnew<CR>", opts)
+
 
 -- map ctrl+hjkl to navigate windows
 keymap("n", "<C-h>", "<C-w>h", opts)
@@ -34,12 +36,22 @@ keymap("n", "<A-Down>", ":resize -2<CR>", opts)
 keymap("n", "<A-Up>", ":resize +2<CR>", opts)
 keymap("n", "<A-Right>", ":vertical resize +2<CR>", opts)
 
--- shift-hl to navigate buffers
-keymap("n", "<S-l>", ":bnext<CR>", opts)
-keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
-keymap("n", "<S-Right>", ":bnext<CR>", opts)
-keymap("n", "<S-Left>", ":bprevious<CR>", opts)
+-- shift-jk to navigate buffers
+keymap("n", "<S-j>", ":bprevious<CR>", opts)
+keymap("n", "<S-k>", ":bnext<CR>", opts)
+
+keymap("n", "<S-Down>", ":bprevious<CR>", opts)
+keymap("n", "<S-Up>", ":bnext<CR>", opts)
+
+
+-- shift-hl to navigate tabs
+keymap("n", "S-h", ":tabp<CR>", opts)
+keymap("n", "S-l", ":tabn<CR>", opts)
+
+keymap("n", "S-Left", ":tabp<CR>", opts)
+keymap("n", "S-Right", ":tabn<CR>", opts)
+
 
 -- stay in visual mode while indenting
 keymap("v", "<", "<gv", opts)
