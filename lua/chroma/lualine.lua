@@ -55,7 +55,11 @@ local line_progress = function()
 end
 
 local col_progress = function()
-  return "column " .. vim.fn.col(".")
+  return "col " .. vim.fn.col(".")
+end
+
+local buf_number = function()
+  return "buf " .. vim.api.nvim_buf_get_number(0) 
 end
 
 -- cool function for progress
@@ -93,7 +97,7 @@ lualine.setup({
     -- lualine_x = { "encoding", "fileformat", "filetype" },
     lualine_x = { diff, "encoding", filetype },
     lualine_y = { line_progress, col_progress },
-    lualine_z = { progress },
+    lualine_z = { buf_number },
   },
   inactive_sections = {
     lualine_a = {},
