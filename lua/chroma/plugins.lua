@@ -21,6 +21,9 @@ require("lazy").setup({
   "folke/tokyonight.nvim",
    --"sainnhe/sonokai",
 
+  -- lualine
+  "nvim-lualine/lualine.nvim",
+
   -- completion
   "hrsh7th/nvim-cmp",
   "hrsh7th/cmp-buffer",
@@ -43,5 +46,5 @@ require("lazy").setup({
   "tmsvg/pear-tree",
 
   -- file tree
-  "nvim-tree/nvim-tree.lua"
+  "nvim-tree/nvim-tree.lua",
 })
