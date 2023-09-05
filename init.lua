@@ -6,3 +6,6 @@ require "chroma.lsp"
 require "chroma.gitsigns"
 require "chroma.nvim-tree"
 require "chroma.lualine"
+
+-- fuckery i wrote
+--require "chroma.buf_eval"
