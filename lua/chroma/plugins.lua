@@ -36,6 +36,9 @@ require("lazy").setup({
   "neovim/nvim-lspconfig",
   "simrat39/rust-tools.nvim",
 
+  -- neorg
+  "nvim-neorg/neorg",
+
   -- gitsigns
   "lewis6991/gitsigns.nvim",
 
